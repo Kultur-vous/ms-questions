@@ -6,6 +6,7 @@ require("dotenv").config();
 
 import { JsonDB } from 'node-json-db';
 import { Config } from 'node-json-db/dist/lib/JsonDBConfig'
+import auth from './middleware/auth';
 const db = new JsonDB(new Config("Questions", true, false, '/'));
 
 
@@ -38,7 +39,8 @@ const question = {
     level: "Facile"
 }
 
-app.get("/", (req: any, res: any) => {
+//TODO l'auth ne renvois rien si le token est pas bon
+app.get("/", auth, (req: any, res: any) => {
     db.push("/questions[]", question, true)
     res.status(200).send({message: "Salut mec"})
 })
@@ -54,5 +56,5 @@ app.get("/questions", async (req: any, res: any) => {
 });
 
 app.listen(process.env.PORT || 3001, () => {
-  console.log("Server app listening on port " + process.env.PORT || 3001);
+  console.log("Server app listening on port 3001");
 });
