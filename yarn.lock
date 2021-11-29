@@ -1121,6 +1121,11 @@ setprototypeof@1.1.1:
   resolved "https://registry.yarnpkg.com/setprototypeof/-/setprototypeof-1.1.1.tgz#7e95acb24aa92f5885e0abef5ba131330d4ae683"
   integrity sha512-JvdAWfbXeIGaZ9cILp38HntZSFSo3mWg6xGcJJsd+d4aRMOqauag1C63dJfDw7OaMYwEbHMOxEZ1lqVRYP2OAw==
 
+shuffle-list@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/shuffle-list/-/shuffle-list-1.0.0.tgz#16414cde6eb6352803738b7c43ece4a14d847573"
+  integrity sha1-FkFM3m62NSgDc4t8Q+zkoU2EdXM=
+
 signal-exit@^3.0.2:
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.6.tgz#24e630c4b0f03fea446a2bd299e62b4a6ca8d0af"

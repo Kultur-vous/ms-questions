@@ -20,18 +20,22 @@ const question = {
     response: [
         {
             title: "Oui",
+            emote: "😁",
             goodAnswer: true
         },
         {
             title: "Non",
+            emote: "👌",
             goodAnswer: false
         },
         {
             title: "Peut etre",
+            emote: "🎅",
             goodAnswer: false
         },
         {
             title: "Jamais",
+            emote: "❤️",
             goodAnswer: false
         }
     ],
@@ -41,7 +45,7 @@ const question = {
 
 //TODO l'auth ne renvois rien si le token est pas bon
 app.get("/", auth, (req: any, res: any) => {
-    db.push("/questions[]", question, true)
+    //db.push("/questions[]", question, true)
     res.status(200).send({message: "Salut mec"})
 })
 
