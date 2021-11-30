@@ -13,7 +13,7 @@ const db = new JsonDB(new Config("Questions", true, false, '/'));
 const questionService = new QuestionService();
 
 const bodyParser = require("body-parser");
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.json());
 
 const question = {
     tilte: "Oui ?",
