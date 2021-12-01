@@ -1,4 +1,5 @@
-const express = require("express");
+//const express = require("express");
+import express from "express";
 import { QuestionService } from "./service/question";
 const app = express();
 const cors = require("cors");
@@ -24,11 +25,7 @@ const categories = [
 
 const levels = ["Très facile", "Facile", "Moyen", "Difficle", "Très difficile"];
 
-app.use(function (
-  req: any,
-  res: { setHeader: (arg0: string, arg1: string | boolean) => void },
-  next: () => void
-) {
+app.use(function (req, res, next) {
   res.setHeader("Access-Control-Allow-Origin", "http://localhost:4200");
 
   res.setHeader(
@@ -41,7 +38,7 @@ app.use(function (
     "X-Requested-With,content-type, Authorization, email"
   );
 
-  res.setHeader("Access-Control-Allow-Credentials", true);
+  res.setHeader("Access-Control-Allow-Credentials", "true");
   next();
 });
 
@@ -73,6 +70,6 @@ app.get("/levels", (req: any, res: any) => {
   res.status(200).send(levels);
 });
 
-app.listen(process.env.PORT || 3001, () => {
-  console.log("Server app listening on port 3001");
+app.listen(process.env.PORT || 5000, () => {
+  console.log("Server app listening on port 5000");
 });

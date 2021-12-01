@@ -1,7 +1,8 @@
 import { JsonDB } from "node-json-db";
 import { Config } from "node-json-db/dist/lib/JsonDBConfig";
 import { Question } from "../models/question";
-var shuffleList = require('shuffle-list');
+//var shuffleList = require('shuffle-list');
+import shuffleList from 'shuffle-list'
 
 const db = new JsonDB(new Config("Questions", true, false, "/"));
 
