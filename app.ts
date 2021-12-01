@@ -81,6 +81,6 @@ app.get("/levels", (req: any, res: any) => {
     res.status(200).send({levels: levels})
 })
 
-app.listen(3001, () => {
+app.listen(5000, () => {
   console.log("Server app listening on port 3001");
 });
