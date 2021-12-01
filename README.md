@@ -25,3 +25,7 @@ Solution : Install ts-node `npm install -g ts-node`
 ### Get categories
 
 `GET /categories`
+
+### Get levels
+
+`GET /levels`
