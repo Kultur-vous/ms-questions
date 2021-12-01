@@ -1,4 +1,5 @@
-const express = require("express");
+//const express = require("express");
+import express from "express"
 import { QuestionService } from './service/question';
 const app = express();
 require("dotenv").config();
@@ -12,7 +13,6 @@ const db = new JsonDB(new Config("Questions", true, false, '/'));
 
 const questionService = new QuestionService();
 
-const bodyParser = require("body-parser");
 app.use(express.json());
 
 const categories = [
