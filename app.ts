@@ -15,6 +15,14 @@ const questionService = new QuestionService();
 const bodyParser = require("body-parser");
 app.use(express.json());
 
+const categories = [
+    "Divers",
+    "Mathématique",
+    "Histoire",
+    "Géographie",
+    "Loisirs & Sports"
+]
+
 const question = {
     tilte: "Oui ?",
     response: [
@@ -58,6 +66,10 @@ app.get("/questions", async (req: any, res: any) => {
       res.status(400).send(e)
   }
 });
+
+app.get("/categories", (req: any, res: any) => {
+    res.status(200).send({categories: categories})
+})
 
 app.listen(process.env.PORT || 3001, () => {
   console.log("Server app listening on port 3001");
