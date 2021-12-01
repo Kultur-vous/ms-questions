@@ -57,7 +57,7 @@ app.get("/", auth, (req: any, res: any) => {
     res.status(200).send({message: "Salut mec"})
 })
 
-app.get("/questions", async (req: any, res: any) => {
+app.get("/questions", auth, async (req: any, res: any) => {
   res.setHeader("Content-Type", "application/json");
   try {
     const getQuestion = await questionService.getQuestion(req.query.level, req.query.nbQuestion, req.query.category)
