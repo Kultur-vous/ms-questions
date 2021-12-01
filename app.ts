@@ -8,6 +8,7 @@ import { Config } from 'node-json-db/dist/lib/JsonDBConfig'
 import auth from './middleware/auth';
 const db = new JsonDB(new Config("Questions", true, false, '/'));
 
+require("dotenv").config();
 
 const questionService = new QuestionService();
 
@@ -81,6 +82,6 @@ app.get("/levels", (req: any, res: any) => {
     res.status(200).send({levels: levels})
 })
 
-app.listen(5000, () => {
+app.listen(process.env.PORT ||5000, () => {
   console.log("Server app listening on port 5000");
 });
