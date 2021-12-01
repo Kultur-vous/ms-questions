@@ -81,6 +81,6 @@ app.get("/levels", (req: any, res: any) => {
     res.status(200).send({levels: levels})
 })
 
-app.listen(process.env.PORT || 5000, () => {
+app.listen(5000, () => {
   console.log("Server app listening on port 5000");
 });
