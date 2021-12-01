@@ -10,11 +10,7 @@
     "npm": "6.x"
   },
   "scripts": {
-    "dev": "nodemon app.ts",
-    "start": "node app.js",
-    "build": "tsc",
-    "postinstall": "npm install -g ts-node && npm i --save-dev @types/jsonwebtoken && npm i --save @types/node && npm run build",
-    "deploy": "git add . && git commit -m Heroku && git push"
+    "dev": "nodemon app.ts"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
