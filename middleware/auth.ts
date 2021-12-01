@@ -9,7 +9,7 @@ export default function auth(req: any, res: any, next: any) {
     if (decryptToken.email === req.headers.email) {
       next();
     } else {
-      console.log("sqd");
+      res.status(400).send({error:"Le token n'est pas valide"})
     }
   } catch (e) {
     return e;

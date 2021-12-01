@@ -2,8 +2,6 @@
 import express from "express"
 import { QuestionService } from './service/question';
 const app = express();
-require("dotenv").config();
-
 
 import { JsonDB } from 'node-json-db';
 import { Config } from 'node-json-db/dist/lib/JsonDBConfig'
