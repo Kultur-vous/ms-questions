@@ -27,10 +27,6 @@ const levels = ["Très facile", "Facile", "Moyen", "Difficle", "Très difficile"
 
 app.use(function (req, res, next) {
   res.setHeader("Access-Control-Allow-Origin", "http://localhost:4200");
-  res.setHeader(
-    "Access-Control-Allow-Origin",
-    "https://boo-question.herokuapp.com"
-  );
 
   res.setHeader(
     "Access-Control-Allow-Methods",
