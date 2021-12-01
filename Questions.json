@@ -1,7 +1,7 @@
 {
   "questions": [
     {
-      "tilte": "Quand ?",
+      "title": "Quand ?",
       "response": [
         { "title": "Oui", "emote": "😁", "goodAnswer": true },
         { "title": "Non", "emote": "👌", "goodAnswer": false },
@@ -12,7 +12,7 @@
       "level": "Facile"
     },
     {
-      "tilte": "Quand ?",
+      "title": "Quand ?",
       "response": [
         { "title": "Oui", "emote": "😁", "goodAnswer": true },
         { "title": "Non", "emote": "👌", "goodAnswer": false },
@@ -23,7 +23,7 @@
       "level": "Très facile"
     },
     {
-      "tilte": "Quand ?",
+      "title": "Quand ?",
       "response": [
         { "title": "Oui", "emote": "😁", "goodAnswer": true },
         { "title": "Non", "emote": "👌", "goodAnswer": false },
@@ -34,7 +34,7 @@
       "level": "Difficile"
     },
     {
-      "tilte": "POurquoi ?",
+      "title": "POurquoi ?",
       "response": [
         { "title": "Oui", "emote": "😁", "goodAnswer": true },
         { "title": "Non", "emote": "👌", "goodAnswer": false },
@@ -45,7 +45,7 @@
       "level": "Facile"
     },
     {
-      "tilte": "Oui ?",
+      "title": "Oui ?",
       "response": [
         { "title": "Oui", "emote": "😁", "goodAnswer": true },
         { "title": "Non", "emote": "👌", "goodAnswer": false },
