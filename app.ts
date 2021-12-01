@@ -23,6 +23,14 @@ const categories = [
     "Loisirs & Sports"
 ]
 
+const levels = [
+    "Très facile",
+    "Facile", 
+    "Moyen",
+    "Difficle",
+    "Très difficile"
+]
+
 const question = {
     tilte: "Oui ?",
     response: [
@@ -69,6 +77,10 @@ app.get("/questions", auth, async (req: any, res: any) => {
 
 app.get("/categories", (req: any, res: any) => {
     res.status(200).send({categories: categories})
+})
+
+app.get("/levels", (req: any, res: any) => {
+    res.status(200).send({levels: levels})
 })
 
 app.listen(process.env.PORT || 3001, () => {
