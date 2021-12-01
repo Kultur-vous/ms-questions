@@ -6,7 +6,11 @@
   "author": "marth154 <37938187+marth154@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon app.ts"
+    "dev": "nodemon app.ts",
+    "start": "node app.js",
+    "build": "tsc",
+    "postinstall": "npm install -g ts-node && npm i --save-dev @types/jsonwebtoken && npm run build",
+    "deploy": "git add . && git commit -m Heroku && git push"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
