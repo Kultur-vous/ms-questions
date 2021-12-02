@@ -22,7 +22,7 @@ const levels = ["Facile", "Difficle"];
 app.use(function (req, res, next) {
   res.setHeader(
     "Access-Control-Allow-Origin",
-    "https://boo-quiz.herokuapp.com"
+    "http://localhost:4200"
   );
 
   res.setHeader(
@@ -39,9 +39,22 @@ app.use(function (req, res, next) {
   next();
 });
 
+const question = {
+  title: "Combien y a-t-il de dizaines dans 70 ?",
+  response: [
+    { title: "0", emote: "😁", goodAnswer: false },
+    { title: "7", emote: "👌", goodAnswer: true },
+    { title: "70", emote: "🎅", goodAnswer: false },
+    { title: "700", emote: "❤️", goodAnswer: false },
+  ],
+  category: "Mathématiques",
+  level: "Difficile",
+};
+
+
 //TODO l'auth ne renvois rien si le token est pas bon
-app.get("/", auth, (req: any, res: any) => {
-  //db.push("/questions[]", question, true)
+app.get("/", (req: any, res: any) => {
+  db.push("/questions[]", question, true)
   res.status(200).send({ message: "Salut" });
 });
 
