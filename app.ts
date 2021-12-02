@@ -15,15 +15,9 @@ const questionService = new QuestionService();
 app.use(cors());
 app.use(express.json());
 
-const categories = [
-  "Divers",
-  "Mathématique",
-  "Histoire",
-  "Géographie",
-  "Loisirs & Sports",
-];
+const categories = ["Divers", "Mathématiques", "Géographie"];
 
-const levels = ["Très facile", "Facile", "Moyen", "Difficle", "Très difficile"];
+const levels = ["Facile", "Difficle"];
 
 app.use(function (req, res, next) {
   res.setHeader("Access-Control-Allow-Origin", "http://localhost:4200");

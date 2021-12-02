@@ -1,59 +1,71 @@
 {
   "questions": [
     {
-      "title": "Quand ?",
+      "title": "De quels animaux la laine provient-elle ?",
       "response": [
-        { "title": "Oui", "emote": "😁", "goodAnswer": true },
-        { "title": "Non", "emote": "👌", "goodAnswer": false },
-        { "title": "Peut etre", "emote": "🎅", "goodAnswer": false },
-        { "title": "Jamais", "emote": "❤️", "goodAnswer": false }
+        { "title": "Abeille", "emote": "🐝", "goodAnswer": false },
+        { "title": "Vache", "emote": "🐮", "goodAnswer": false },
+        { "title": "Mouton", "emote": "🐑", "goodAnswer": true },
+        { "title": "Lapin", "emote": "🐇", "goodAnswer": false }
       ],
       "category": "Divers",
       "level": "Facile"
     },
+
     {
-      "title": "Quand ?",
+      "title": "Combien l'être humain a-t-il de doigts sur une seule main ? ",
       "response": [
-        { "title": "Oui", "emote": "😁", "goodAnswer": true },
-        { "title": "Non", "emote": "👌", "goodAnswer": false },
-        { "title": "Peut etre", "emote": "🎅", "goodAnswer": false },
-        { "title": "Jamais", "emote": "❤️", "goodAnswer": false }
+        { "title": "4", "emote": "4️⃣", "goodAnswer": false },
+        { "title": "3", "emote": "3️⃣", "goodAnswer": false },
+        { "title": "5", "emote": "5️⃣", "goodAnswer": true },
+        { "title": "1", "emote": "1️⃣", "goodAnswer": false }
       ],
-      "category": "Divers",
-      "level": "Très facile"
+      "category": "Mathématiques",
+      "level": "Facile"
     },
     {
-      "title": "Quand ?",
+      "title": "Quelle période de la journée se situe avant midi ?",
       "response": [
-        { "title": "Oui", "emote": "😁", "goodAnswer": true },
-        { "title": "Non", "emote": "👌", "goodAnswer": false },
-        { "title": "Peut etre", "emote": "🎅", "goodAnswer": false },
-        { "title": "Jamais", "emote": "❤️", "goodAnswer": false }
+        { "title": "Matin", "emote": "🌄", "goodAnswer": true },
+        { "title": "Après-midi", "emote": "☀️", "goodAnswer": false },
+        { "title": "Soir", "emote": "🌅", "goodAnswer": false },
+        { "title": "Nuit", "emote": "💤", "goodAnswer": false }
       ],
       "category": "Divers",
       "level": "Difficile"
     },
     {
-      "title": "POurquoi ?",
+      "title": "De quelle couleur est le cheval blanc d'Henri IV ?",
       "response": [
-        { "title": "Oui", "emote": "😁", "goodAnswer": true },
-        { "title": "Non", "emote": "👌", "goodAnswer": false },
-        { "title": "Peut etre", "emote": "🎅", "goodAnswer": false },
-        { "title": "Jamais", "emote": "❤️", "goodAnswer": false }
+        { "title": "Rouge", "emote": "🟥", "goodAnswer": false },
+        { "title": "Blanc", "emote": "⬜", "goodAnswer": true },
+        { "title": "Bleu", "emote": "🟦", "goodAnswer": false },
+        { "title": "Vert", "emote": "🟩", "goodAnswer": false }
       ],
       "category": "Divers",
       "level": "Facile"
     },
     {
-      "title": "Oui ?",
+      "title": "Combien y a-t-il de dizaines dans 70 ?",
       "response": [
-        { "title": "Oui", "emote": "😁", "goodAnswer": true },
-        { "title": "Non", "emote": "👌", "goodAnswer": false },
-        { "title": "Peut etre", "emote": "🎅", "goodAnswer": false },
-        { "title": "Jamais", "emote": "❤️", "goodAnswer": false }
+        { "title": "0", "emote": "0️⃣", "goodAnswer": true },
+        { "title": "7", "emote": "7️⃣", "goodAnswer": false },
+        { "title": "70", "emote": "7️⃣0️⃣", "goodAnswer": false },
+        { "title": "700", "emote": "7️⃣0️⃣0️⃣", "goodAnswer": false }
       ],
-      "category": "Divers",
+      "category": "Mathématiques",
       "level": "Facile"
+    },
+    {
+      "title": "Le Sirtaki est une danse traditionnelle qui vient...",
+      "response": [
+        { "title": "Russie", "emote": "🇷🇺", "goodAnswer": false },
+        { "title": "Grèce", "emote": "🇬🇷", "goodAnswer": true },
+        { "title": "Japon", "emote": "🇯🇵", "goodAnswer": false },
+        { "title": "France", "emote": "🇫🇷", "goodAnswer": false }
+      ],
+      "category": "Géographie",
+      "level": "Difficile"
     }
   ]
 }
