@@ -15,12 +15,15 @@ const questionService = new QuestionService();
 app.use(cors());
 app.use(express.json());
 
-const categories = ["Divers", "Mathématiques", "Géographie"];
+const categories = ["Divers", "Mathématiques"];
 
 const levels = ["Facile", "Difficle"];
 
 app.use(function (req, res, next) {
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:4200");
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    "https://boo-quiz.herokuapp.com"
+  );
 
   res.setHeader(
     "Access-Control-Allow-Methods",
@@ -39,7 +42,7 @@ app.use(function (req, res, next) {
 //TODO l'auth ne renvois rien si le token est pas bon
 app.get("/", auth, (req: any, res: any) => {
   //db.push("/questions[]", question, true)
-  res.status(200).send({ message: "Salut mec" });
+  res.status(200).send({ message: "Salut" });
 });
 
 app.get("/questions", auth, async (req: any, res: any) => {
