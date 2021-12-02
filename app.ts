@@ -17,7 +17,7 @@ app.use(express.json());
 
 const categories = ["Divers", "Mathématiques"];
 
-const levels = ["Facile", "Difficle"];
+const levels = ["Facile", "Difficile"];
 
 app.use(function (req, res, next) {
   res.setHeader(
@@ -39,22 +39,10 @@ app.use(function (req, res, next) {
   next();
 });
 
-const question = {
-  title: "Combien y a-t-il de dizaines dans 70 ?",
-  response: [
-    { title: "0", emote: "😁", goodAnswer: false },
-    { title: "7", emote: "👌", goodAnswer: true },
-    { title: "70", emote: "🎅", goodAnswer: false },
-    { title: "700", emote: "❤️", goodAnswer: false },
-  ],
-  category: "Mathématiques",
-  level: "Difficile",
-};
-
 
 //TODO l'auth ne renvois rien si le token est pas bon
 app.get("/", (req: any, res: any) => {
-  db.push("/questions[]", question, true)
+  //db.push("/questions[]", question, true)
   res.status(200).send({ message: "Salut" });
 });
 
