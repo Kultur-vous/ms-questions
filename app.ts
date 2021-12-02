@@ -15,7 +15,7 @@ const questionService = new QuestionService();
 app.use(cors());
 app.use(express.json());
 
-const categories = ["Divers", "Mathématiques"];
+const categories = ["Divers", "Mathematiques"];
 
 const levels = ["Facile", "Difficile"];
 
